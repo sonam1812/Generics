@@ -7,7 +7,12 @@ public class MaxInteger<T extends Comparable<T>> {
 		for (T type : types)
 			if (type.compareTo(maximum) > 0)
 				maximum = type;
+		toPrint(types, maximum);
 		return maximum;
+	}
+
+	public static <T> void toPrint(T types, T maximum) {
+		System.out.println("Max : " + maximum);
 
 	}
 }
